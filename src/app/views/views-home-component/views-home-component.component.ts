@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Item } from '../item-list/item-list.component';
 
 @Component({
   selector: 'app-views-home-component',
@@ -11,4 +12,6 @@ export class ViewsHomeComponentComponent {
     { label: 'views', value: '31,200' },
     { label: 'users', value: '9,120' },
   ];
+
+  items: Item[] = [{ title: 'Test', image: 'assets/images/couch.jpeg', description: 'lorem' }];
 }

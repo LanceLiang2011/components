@@ -1,0 +1,17 @@
+<app-divider>Modal</app-divider>
+<button (click)="showModal()">Show Modal</button>
+<app-modal (onClose)="hideModal()" *ngIf="shouldModalShown">
+  <div class="header">Modal!</div>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id enim non
+    voluptatibus quod rerum accusantium quia reiciendis aliquid commodi?
+    Libero sit cum illum consequatur? Veniam similique amet eius voluptatem
+    at?
+  </p>
+</app-modal>
+
+<br />
+<br />
+
+<app-divider>Accordion</app-divider>
+<app-accordion [items]="items"></app-accordion>
